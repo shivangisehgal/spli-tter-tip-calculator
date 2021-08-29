@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+a {
+  color: hsl(183, 100%, 15%);
+}
+
+a:hover {
+  color: hsl(183, 100%, 15%);
+}
+
+.attribution {
+  color: hsl(186, 14%, 43%);
+}
+
+.logo {
+  margin-top: 50px;
+  margin-left: 44%
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+
+.row-main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  color: hsl(186, 14%, 43%);
+  margin: 2%;
+  padding-left: 0;
+}
+
+.bill-container {
+  position: relative;
+}
+
+.bill-amount {
+  color: hsl(180, 4%, 26%);
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  padding-right: 16px;
+  width: 100%;
+}
+
+.bill-amount:focus {
+  border: solid 2px hsl(172, 67%, 45%);
+  outline: none;
+}
+
+.icon-dollar {
+  position: absolute;
+  top: 10px;
+  right: 95%;
+}
+
+.col-lg-4 {
+  padding-right: 2.25%;
+  padding-left: 0%
+}
+
+.tip {
+  margin-left: -0.75%;
+}
+
+.tip-text {
+  margin-top: 10px;
+}
+
+button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+
+button:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
+.bt{
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+.bt, .custom {
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2px;
+  margin-bottom: 10px;
+}
+
+.custom {
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 4.8px;
+  border-style: none;
+}
+
+.custom:focus {
+  color: hsl(183, 100%, 15%);
+  border-color: hsl(172, 67%, 45%);
+  border-style: solid;
+  outline: none;
+  border-width: 2px;
+}
+
+.active-button {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+.active-button:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.person-text {
+  margin-right: 15%;
+  margin-bottom: 3%;
+  padding-top: 1px;
+}
+
+.cant-be-zero {
+  border: 2px solid #ff4500 !important;
+}
+.cant-be-zero-text {
+  color: #ff4500;
+  position: relative;
+  left: 140px;
+  display: none;
+}
+
+.person-count {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 16px;
+  width: 100%;
+}
+
+.person-count:focus {
+  border: solid 2px hsl(172, 67%, 45%);
+  outline: none;
+}
+
+.right {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  margin: 2%;
+  border-radius: 20px;
+}
+
+/* a little grid just so that I don't completely forget how to use it :) */
+.answer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tip-amount-text {
+  color: white;
+  padding-top: 20px;
+  padding-left: 2%;
+}
+
+.sub-slash {
+  color: hsl(186, 14%, 43%);
+}
+
+.tip-sum {
+  color: hsl(172, 67%, 45%);
+  font-size: 200%;
+  font-weight: 700;
+  display: inline;
+  text-align: right;
+  margin-top: 13px;
+  padding-right: 2%;
+}
+
+.total-per-person-text {
+  color: white;
+}
+
+.total-sum {
+  color: hsl(172, 67%, 45%);
+  font-size: 200%;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 0px;
+  padding-right: 2%;
+}
+
+.reset-btn {
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  border-style: none;
+  width: 100%;
+}
+
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+@media(max-width: 991px) {
+  .reset-btn {
+    margin-bottom: 5%;
+  }
+
+  .right {
+    margin-bottom: 5%;
+  }
+
+  .left {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .me {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .logo {
+    margin-top: 48px;
+  }
+
+  .reset-btn {
+    margin-bottom: 5%;
+  }
+}

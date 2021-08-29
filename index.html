@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Tip Calculator App | Frontendmentor Challenge</title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+  <div class="container">
+    <div class="row row-main justify-content-center">
+      <div class="col-lg-5 left">
+        <p>Bill</p>
+        <div class="bill-container">
+          <input class="bill-amount" type="text" placeholder="0">
+          <img class="icon-dollar" src="images/icon-dollar.svg">
+        </div>
+        <p class="tip-text">Select Tip %</p>
+        <div class="row tip">
+          <div class="col-lg-4 col-6 ">
+            <button type="button" class="btn btn-primary-info bt five-percent">5%</button>
+          </div>
+          <div class="col-lg-4 col-6 ">
+            <button type="button" class="btn btn-primary-info bt ten-percent">10%</button>
+          </div>
+          <div class="col-lg-4 col-6 ">
+            <button type="button" class="btn btn-primary-info bt fifteen-percent">15%</button>
+
+          </div>
+          <div class="col-lg-4 col-6 ">
+            <button type="button" class="btn btn-primary-info bt twenty-five-percent">25%</button>
+
+          </div>
+          <div class="col-lg-4 col-6 ">
+            <button type="button" class="btn btn-primary-info bt fifty-percent">50%</button>
+
+          </div>
+          <div class="col-lg-4 col-6 ">
+            <input type="text" class="custom" placeholder="Custom">
+          </div>
+        </div>
+        <div class="part2">
+          <p class="person-text">Number of People
+            <span class="cant-be-zero-text">Can't be zero</span>
+          </p>
+          <div class="bill-container">
+            <input class="person-count" type="text" placeholder="0">
+            <img class="icon-dollar" src="images/icon-person.svg">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-5 right">
+        <div class="answer">
+          <p class="tip-amount-text">Tip Amount <br><span class="sub-slash">/person</span></p>
+          <p class="tip-sum">$0.00</p>
+          <p class="total-per-person-text">Total <br><span class="sub-slash">/person</span></p>
+          <p class="total-sum">$0.00</p>
+        </div>
+        <button type="button" class="btn btn-primary-info reset-btn">RESET</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <span class="me">Coded by <a href="">Shivangi Sehgal</a>.</span>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
